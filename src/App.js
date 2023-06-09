@@ -17,7 +17,7 @@ function App() {
   }, [])
   return (
     <div className="App">
-      <NasaPhoto photo={data} />
+      { data && <NasaPhoto photo={data} /> }
     </div>
   );
 }
