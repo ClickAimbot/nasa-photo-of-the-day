@@ -3,6 +3,8 @@ import axios from 'axios';
 
 import "./App.css";
 
+import NasaPhoto from "./Components/NasaPhoto";
+
 function App() {
   const [data, setData] = useState();
 
@@ -15,6 +17,7 @@ function App() {
   }, [])
   return (
     <div className="App">
+      <NasaPhoto photo={data} />
     </div>
   );
 }
